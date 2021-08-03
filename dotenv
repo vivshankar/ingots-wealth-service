@@ -1,0 +1,5 @@
+TENANT_URL=https://harbinger.verify.ibm.com
+CLIENT_ID=
+CLIENT_SECRET=
+REDIRECT_URI=http://localhost:3000/auth/callback
+CONSENT_APP_HOST=http://localhost:3001

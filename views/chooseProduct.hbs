@@ -1,0 +1,32 @@
+<div class="docs-section">
+    <form id="frm" 
+        action="/products/choose" method="POST">
+        <div class="row">
+            <div class="twelve columns">
+                <label for="pkgName">Package name</label>
+                <select class="u-full-width" id="pkgName" name="pkgName">
+                    <option value="knut">Ingot Knut I</option>
+                    <option value="sickle">Ingot Sickle II</option>
+                    <option value="galleon" selected>Ingot Galleon III</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <label for="txtAmount">Monthly deposit</label>
+                <input class="u-full-width" type="text" id="txtAmount" name="txtAmount"
+                    min="0.01" step="0.01" max="2500" />
+            </div>
+        </div>
+        <input class="button-primary" type="submit" id="btnNext" value="Next >">
+    </form>
+</div>
+<script type="text/javascript">
+    const button = document.getElementById('btnNext');
+    const form = document.getElementById('frm');
+    button.addEventListener('click', async _ => {
+
+        button.value = "Wingardium leviosa!"
+        return true;
+    });
+</script>

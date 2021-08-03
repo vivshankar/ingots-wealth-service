@@ -1,0 +1,26 @@
+<div class="docs-section">
+    <table>
+        <tbody>
+            {{#each products}}
+            <tr class="row">
+                <td class="ten columns">
+                    {{this.pkgName}}&nbsp;&nbsp;(Started on: {{formatDate this.startDate}})
+                </td>
+                <td class="two columns">
+                    <a href={{concat '/products/view_payee?appid=' this.id}}>View Bank Instruction</a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <div class="navbar-spacer"></div>
+    <div>
+        <button type="button" id="btnAccNum">+ Add New</button>
+    </div>
+</div>
+<script type="text/javascript">
+  const button = document.getElementById('btnAccNum');
+  button.addEventListener('click', async _ => {
+    location.href = '/products/choose';
+  })
+</script>
