@@ -44,3 +44,7 @@ Follow the steps to [create the TPP application on the Bank IBM Security Verify 
 3. Setup and run [Dunebank Consent App](https://github.com/vivshankar/dunebank-consent).
 
 4. Open the browser and go to http://localhost:3000/products and you should be able to use the application
+
+## Browsing the code
+
+The project structure is described [here](/docs/browsing_code.md)
